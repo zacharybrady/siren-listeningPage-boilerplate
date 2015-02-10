@@ -1,0 +1,184 @@
+{
+    "project": {
+        "name": "Siren Core",
+        "description": "Change this on project start",
+        "version": "0",
+        "url": ""
+    },
+    "files": {
+        "js/jsSrc/plugins/ttw-music-player.js": {
+            "name": "js/jsSrc/plugins/ttw-music-player.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "js/jsSrc/home.js": {
+            "name": "js/jsSrc/home.js",
+            "modules": {
+                "Home": 1
+            },
+            "classes": {
+                "password_handling": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "js/jsSrc/listen.js": {
+            "name": "js/jsSrc/listen.js",
+            "modules": {
+                "Listening_Page": 1
+            },
+            "classes": {
+                "music_player_set_up": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "js/jsSrc/myplaylist.js": {
+            "name": "js/jsSrc/myplaylist.js",
+            "modules": {
+                "Playlist": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Home": {
+            "name": "Home",
+            "submodules": {},
+            "classes": {
+                "password_handling": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/jsSrc/home.js",
+            "line": 6,
+            "description": "This file contains Javascript functionalities for the Homepage"
+        },
+        "Listening_Page": {
+            "name": "Listening_Page",
+            "submodules": {},
+            "classes": {
+                "music_player_set_up": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/jsSrc/listen.js",
+            "line": 6,
+            "description": "This file contains Javascript functionalities for the Listening Page"
+        },
+        "Playlist": {
+            "name": "Playlist",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/jsSrc/myplaylist.js",
+            "line": 1,
+            "description": "This file contains the playList object"
+        }
+    },
+    "classes": {
+        "password_handling": {
+            "name": "password_handling",
+            "shortname": "password_handling",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Home",
+            "namespace": "",
+            "file": "js/jsSrc/home.js",
+            "line": 6,
+            "static": 1
+        },
+        "music_player_set_up": {
+            "name": "music_player_set_up",
+            "shortname": "music_player_set_up",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Listening_Page",
+            "namespace": "",
+            "file": "js/jsSrc/listen.js",
+            "line": 6,
+            "description": "Functions that set up the jQuery music player",
+            "static": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "js/jsSrc/plugins/ttw-music-player.js",
+            "line": 1,
+            "description": "Created by 23rd and Walnut for Codebasehero.com\nwww.23andwalnut.com\nwww.codebasehero.com\nUser: Saleem El-Amin\nDate: 6/11/11\nTime: 6:41 AM\n\nVersion: 1.01\nLicense: You are free to use this file in personal and commercial products, however re-distribution 'as-is' without prior consent is prohibited.",
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/plugins/ttw-music-player.js",
+            "line": 474,
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/plugins/ttw-music-player.js",
+            "line": 516,
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/home.js",
+            "line": 15,
+            "description": "Checks the password",
+            "itemtype": "method",
+            "name": "TheLogin()",
+            "class": "password_handling",
+            "module": "Home"
+        },
+        {
+            "file": "js/jsSrc/home.js",
+            "line": 32,
+            "description": "On the press of the enter key or click of submit",
+            "itemtype": "method",
+            "name": "password_submitted",
+            "class": "password_handling",
+            "module": "Home"
+        },
+        {
+            "file": "js/jsSrc/listen.js",
+            "line": 12,
+            "itemtype": "method",
+            "name": "initPlayer",
+            "class": "music_player_set_up",
+            "module": "Listening_Page"
+        },
+        {
+            "file": "js/jsSrc/myplaylist.js",
+            "line": 6,
+            "itemtype": "method",
+            "name": "myPlaylist[]",
+            "class": "",
+            "module": "Playlist"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nCreated by 23rd and Walnut for Codebasehero.com\nwww.23andwalnut.com\nwww.codebasehero.com\nUser: Saleem El-Amin\nDate: 6/11/11\nTime: 6:41 AM\n\nVersion: 1.01\nLicense: You are free to use this file in personal and commercial products, however re-distribution 'as-is' without prior consent is prohibited.",
+            "line": " js/jsSrc/plugins/ttw-music-player.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/jsSrc/plugins/ttw-music-player.js:474"
+        },
+        {
+            "message": "Missing item type",
+            "line": " js/jsSrc/plugins/ttw-music-player.js:516"
+        }
+    ]
+}

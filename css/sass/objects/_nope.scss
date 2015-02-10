@@ -1,0 +1,23 @@
+/********
+
+Siren Listening Page Boilerplate v1.0
+
+File Name: Nope
+
+File Purpose: Additional styling for wrong password page
+
+File Notes: 
+
+*********/
+
+/*-------------------------*\
+  #Result
+\*-------------------------*/
+
+.password_result{
+	text-align: center;
+
+	a{
+		font-size: modular-scale(4,$base-size,$ratio);
+	}
+}

@@ -1,0 +1,134 @@
+/********
+
+Siren Listening Page Boilerplate v1.0
+
+File Name: Playlist
+
+File Purpose: Styling for the music player and associated elements
+
+File Notes: 
+
+*********/
+
+/*-------------------------*\
+  #Album-Container
+\*-------------------------*/
+
+.album_container {
+	text-align: center;
+}
+
+.album_title{
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+/*-------------------------*\
+  #Music-Player-Container
+\*-------------------------*/
+
+.album_playlist{
+
+	max-width: 450px;
+	padding-bottom: 20px;
+	margin: 0 auto 2em;
+	overflow: hidden;
+	position: relative;
+
+	ol{
+		list-style: none;
+		padding: 0;
+	}
+
+	li{
+		font-family: 'simplificasimplifica';
+		line-height: 1.5em;
+		margin-bottom: 0.5em;
+	}
+}
+
+.ttw-music-player li.playing {
+    color:$color-highlight!important;
+    font-weight: 900;
+}
+
+
+
+
+/*-------------------------*\
+  #Music-Player-Controls
+\*-------------------------*/
+
+.ttw-music-player .player-controls {
+	width: 85px;
+	margin: 0 auto;
+	clear: both;
+	float: none!important;
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+
+.ttw-music-player .player-controls div {
+    float: left;
+    cursor: pointer;
+}
+
+.ttw-music-player .previous, .ttw-music-player .next {
+    height: 32px;
+    width: 20px;
+    margin: 1px 0;
+}
+
+.ttw-music-player .play, .ttw-music-player .pause {
+    width: 28px;
+    height: 24px;
+    margin: 6px 8px 0 5px;
+}
+
+.ttw-music-player .previous {
+    background: transparent url(../images/icon-rewind.gif) no-repeat center center;
+}
+
+.ttw-music-player .next {
+    background: transparent url(../images/icon-forward.gif) no-repeat center center;
+}
+
+.ttw-music-player .play {
+    background: transparent url(../images/icon-play.gif) no-repeat center center;
+}
+
+.ttw-music-player .pause {
+    background: transparent url(../images/icon-pause.gif) no-repeat center center;
+}
+
+
+
+
+/*-------------------------*\
+  #Music-Player-Misc
+\*-------------------------*/
+
+.track{
+	cursor: pointer;
+}
+
+.album-cover, .artist-outer, .more, .duration, .jp-current-time, .jp-duration{
+	display: none!important;
+}
+
+
+
+
+
+/*-------------------------*\
+  #Dowload
+\*-------------------------*/
+
+.album_download{
+	text-align: center;
+}
+
