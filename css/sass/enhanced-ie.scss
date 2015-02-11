@@ -1,6 +1,6 @@
 /********
 
-Siren Framework v3.3
+Siren Listening Page Boilerplate v1.0
 
 File Name: Enhanced Styles for Internet Explorer
 
@@ -13,3 +13,58 @@ File Notes:
 
 *********/
 
+
+/*-------------------------*\
+  #Mixins-Variables
+\*-------------------------*/
+
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3";
+@import "modular-scale";
+@import "mixins/mixins"; 
+@import "variables/variables"; 
+
+
+
+
+
+/*-------------------------*\
+  #Core
+\*-------------------------*/
+
+@import "base-enhanced/core-enhanced"; 
+
+
+
+
+
+/*-------------------------*\
+  #Layout
+\*-------------------------*/
+
+@import "layout/containers";
+@import "layout/grid";
+
+
+
+
+
+/*-------------------------*\
+  #Objects
+\*-------------------------*/
+
+@import "objects/headerfooter";
+@import "objects/playlist";
+@import "objects/password";
+@import "objects/mgmt";
+@import "objects/nope";
+
+
+
+
+
+/*-------------------------*\
+  #Misc
+\*-------------------------*/
+
+@import "misc/print"; //Print Styles

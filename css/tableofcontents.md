@@ -1,11 +1,8 @@
 # Table of Contents for the CSS Directory #
-## As of Siren 3.2 ##
+## Siren Listening Page Boilerplate v1.0 ##
 
 ### DIRECTORIES ###
-1. POLYFILLS
-	- Contains polyfills necessary for maintaining consistency in browser styles
-	- Contents: boxsizing.htc
-2. SASS
+1. SASS
 	- Contains the .scss files that are processed into .css
 	- TOC included
 

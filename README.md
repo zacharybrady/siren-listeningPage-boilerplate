@@ -1,15 +1,16 @@
-sassysiren
+siren-listeningPage
 ==========
 
-# Siren Framework # 
-## Version 3.3 ##
+# Siren Listening Page Boilerplate # 
+## Version 1.0 ##
 by Zachary Brady
 www.zacharybrady.com
 www.suits-sandals.com
 
 
 ## About ##
-Siren is the work horse quick start website framework for Suits & Sandals, LLC. It strives to provide simple building blocks in order to make starting a project quicker while maintaining best practices. Siren is design to handle a variety of use cases and should be edited to perfectly fit the project at hand. Lastly, this is a living framework that is constantly updated as lessons are learned and discoveries are made.
+The Siren Listening Page Boilerplate (SLPB) by Suits & Sandals is designed to provide a quick start for creating simple listening websites for musicians and bands. It provides the basic and required files, directories, markup, CSS, and Javascript for creating a listening page. The Siren Listening Page Boilerplate is based on Suits & Sandals Siren framework and holds of of Siren's core tenants and philosophies.
+
 
 
 ## Dependencies ##
@@ -18,16 +19,16 @@ The following list are the dependencies built into Siren.
 - PHP 5.0 +
 - Grunt 0.4.3 +
 	- Default plugins listed in TOC
-- SCSS 3.3+ (Soon to settle on 3.4+)
+- SCSS 3.4+
 - Compass 
 	- Sassy-math
 	- Modular-scale 2.0
 - HTML5SHIV
 - Respond.js
-- Boxsizing Polyfill
 - Enhance.js
 - Git
 	- Not so much a dependency as highly recomended
+
 
 
 ## Table of Contents ##
