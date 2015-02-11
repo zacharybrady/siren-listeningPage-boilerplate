@@ -12,6 +12,7 @@
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 <![endif]-->
 
+<footer class="page_footer"></footer>
 
 </body>
 

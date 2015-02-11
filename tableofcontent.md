@@ -1,5 +1,5 @@
 # Table of Contents #
-## As of Siren 3.2 ##
+## Siren Listening Page Boilerplate v1.0 ##
 
 1. CSS
 	- Contains the CSS files, the SASS directory, and the POLYFILL directory

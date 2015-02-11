@@ -66,6 +66,6 @@
 <!-- Page class and page specific class -->
 <body class="page page-<?php echo $pagename; ?>"> 
 
-<header class="page_header">
+<header class="page_header" role="banner">
 	<h1 class="page_title">{ Musician Name }</h1>
 </header>

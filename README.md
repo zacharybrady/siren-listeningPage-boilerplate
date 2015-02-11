@@ -26,14 +26,19 @@ The following list are the dependencies built into Siren.
 - HTML5SHIV
 - Respond.js
 - Enhance.js
+- Jquery Music Player
 - Git
 	- Not so much a dependency as highly recomended
 
 
 
 ## Table of Contents ##
-This index is for files and directories in the top level directory. Sub-directories have their own indexes where noted. Update this list and related lists throughout a project.
+Most directories, including the root directory, have their own indexes. Update this list and related lists throughout a project.
 
+
+
+## Tutorial ##
+While the Siren Listening Page Boilerplate is made to be easy to use it is advised to closely follow the tutorial if this is your first time. The tutorial also functions as a reference sheet for future uses of this boilerplate. You can find the tutorial 
 
 
 
@@ -50,13 +55,13 @@ Siren is an extension of its creator's, Zachary Brady, key philosophies in regar
 
 ## Use and Contact Information ##
 The Siren Framework is free to use in projects as allowed in its MIT license. Feel free to Fork, submit Issues, etc on Github.
-You can reach Zachary at zachary@sasbranding.com for questions regarding the framework, for inqueries about services offered by Suits & Sandals, LLC. , or for job opportunities.
+You can reach Zachary at zachary@suits-sandals.com for questions regarding the framework, for inqueries about services offered by Suits & Sandals, LLC. , or for job opportunities.
 
 
 ## Headline Format ##
 The required headline for the top of SCSS snippets and Markup sections
 
-- Siren Framework v3.3
+- Siren Listening Page Boilerplate v1.0
 - File Name: {file name}
 - File Purpose: {file purpose}
 - File Notes: {notes for file}
