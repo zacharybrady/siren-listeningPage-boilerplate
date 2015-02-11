@@ -176,6 +176,7 @@ Custom javascript can be added to either listen.js, home.js, or both files. Cust
 
 ## 8. Wrapping Up ##
 Upon completion the site and code should be:
+
 1. Cross browser and device tested
 2. Reviewed by rest of development team
 3. Reviewed by design team
