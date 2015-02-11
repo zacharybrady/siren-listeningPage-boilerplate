@@ -27,10 +27,10 @@
 		5. Playlist
 	6. Responsive
 7. Javascript
-	1. Base
+	1. Password Check
 	2. Music Playlist
-	3. Custome JS
-8. Fine Tuning
+	3. Custom JS
+8. Wrapping Up
 
 
 ## 1. Introduction ##
@@ -117,9 +117,68 @@ All of the necessary grunt plugins for creating a Listening Page are already ins
 
 
 ## 6. Styling ##
-Styling for Siren based frameworks and boilerplates is done using the SCSS preprocessing language. All necessary files (snippets and organizational files) have already been created. This section will go over how to edit these files for ease of use.
+Styling for Siren based frameworks and boilerplates is done using the SCSS preprocessing language. All necessary files (snippets and organizational files) have already been created and no additional files should be needed. This section will go over how to edit these files for ease of use.
 
 ### Dependencies ###
 Siren using Compass and the compass plugins Modular Scale (https://github.com/at-import/modular-scale) and Vertical Rhythm (http://compass-style.org/reference/compass/typography/vertical_rhythm/). Modular Scale outputs font sizes in "em" units based on the Perfect Fourth ratio. Vertical Rhythm generates the proper line-height, padding, and margin values to maintain proper vertical rhythm. 
 
 #### Variables ####
+Variables are used to keep consistency with values such as colors and fonts. It is recommended that you start by editing the variables presented to suit the branding before creating new variables. 
+
+Variables related to vertical rhythm and modular scale should not be touched unless the design fully requires you to do so.
+
+#### Base Styles ####
+This boilerplate uses a normalizing file based on normalize.css called _core.scss and found in the basic directory. While other types of projects would have you edit this file directly it is advised that this file is left alone for Listening Pages.
+
+You can edit element selectors ( a, h1, p, etc. ) in the _core-enhance.scss file in the base-enhanced directory.
+
+#### Layout ####
+The layout directory has two files: _containers.scss and _grid.scss. _containers.scss holds the styling, including skin related styles, for page containers. _grid.scss woulds the styles for the horrizontal layout of the pages including columns and wrapping rows. The media queries found in _gird.scss should be moved to the responsive file for production.
+
+#### Objects ####
+Siren follows the methodologies of OOCSS (http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/) and BEM-like (http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming conventions, which both dictate that classes should be handled as objects with subcomponents and variants. This boilerplate gives you snippet files for each of the objects needed.
+
+##### _headerfooter.scss #####
+Where styles for the page header and footer goes. Shouldn't be too much here.
+
+##### _mgmt.scss #####
+For the management information styles.
+
+##### _none.scss #####
+For styling the "password is incorrect" page.
+
+##### _password.scss #####
+For styling the password form.
+
+##### _playlist.scss #####
+For styling the playlist and related elements. There is already a base for what css is needed for the playlist in this file. Editing these classes is necessary but should be done with care.
+
+#### Responsive ####
+The responsive directory holds the _responsive.scss file. This file is where all media queries should go. Because Siren is based on mobile-first development "min-width" queries should be used exclusively. Media queries should increase in pixel width going down the document.
+
+
+## 7. Javascript ##
+Javascript, with the jQuery library, is used to create the playlist, to check the provided password, and for any additional needs that can't be achieved otherwise.
+
+### Password Control ###
+Found in the home.js (compiled to home.min.js) file, this simple script checks the password and sends the user to the neccessary page. You will not need to edit any major functional aspect of this script but will need to edit the password as per the clients requirement.
+
+### Music Player ###
+The music player is a jquery plugin that is made up of several third party script files and two custom files, listen.js and myplaylist.js; all are compilled into listen.min.js.
+
+Listen.js contains the init function for the Music player. You may have to change the hooked class name if you changed it in the markup; you shouldn't have.
+
+Myplaylist.js contains an object which holds all the data needed for populating the Music Player. Use the example provided to guide youself your entering the correct information that matches the provided and generated audio files.
+
+### Custom JS ###
+Custom javascript can be added to either listen.js, home.js, or both files. Custom javascript may include javascript neccessary for complex vertical layouts.
+
+
+## 8. Wrapping Up ##
+Upon completion the site and code should be:
+1. Cross browser and device tested
+2. Reviewed by rest of development team
+3. Reviewed by design team
+
+Once that's done open a beer, relax, and launch dat site!
+
