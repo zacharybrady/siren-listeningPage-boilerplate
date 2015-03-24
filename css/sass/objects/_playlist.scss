@@ -39,12 +39,13 @@ File Notes:
 	overflow: hidden;
 	position: relative;
 
-	ol{
-		list-style: none;
-		padding: 0;
-	}
+}
 
-	li{
+.tracks {
+	list-style: none;
+	padding: 0;
+
+	li {
 		font-family: 'simplificasimplifica';
 		line-height: 1.5em;
 		margin-bottom: 0.5em;

@@ -23,7 +23,11 @@
             trackList:'.tracklist',
             tracks:'.tracks',
             track:'.track',
+            trackRating:'.rating-bar',
             trackInfo:'.track-info',
+            rating:'.rating',
+            ratingLevel:'.rating-level',
+            ratingLevelOn:'.on',
             title: '.title',
             duration: '.duration',
             buy:'.buy',
@@ -31,6 +35,9 @@
             playing:'.playing',
             moreButton:'.more',
             player:'.player',
+            artist:'.artist',
+            artistOuter:'.artist-outer',
+            albumCover:'.img',
             description:'.description',
             descriptionShowing:'.showing'
         };
@@ -39,7 +46,7 @@
             ratingCallback:null,
             currencySymbol:'$',
             buyText:'BUY',
-            tracksToShow:6,
+            tracksToShow:50,
             autoPlay:false,
             jPlayer:{}
         };
@@ -74,16 +81,16 @@
             markup = {
                 listItem:'<li class="track">' +
                             '<span class="title"></span>' +
-                            '<span class="duration"></span>' +
+                            // '<span class="duration"></span>' +
+                            // '<span class="rating"></span>' +
                             '<a href="#" class="buy not-active" target="_blank"></a>' +
                         '</li>',
-                
+                ratingBar:'<span class="rating-level rating-bar"></span>'
             };
 
             function init(playlistOptions) {
 
                 $myJplayer = $('.ttw-music-player .jPlayer-container');
-
 
                 var jPlayerDefaults, jPlayerOptions;
 
@@ -379,8 +386,8 @@
                         '            <span class="highlight"></span>' +
                         '        </div>' +
                         '        <div class="track-info">' +
-                        '            <p class="title"></p>'+
-                        '    <p class="description"></p>' +
+                        '            <p class="title"></p>' +
+                        '            <p class="artist-outer">By <span class="artist"></span></p>' +
                         '            <div class="rating">' +
                         '                <span class="rating-level rating-star on"></span>' +
                         '                <span class="rating-level rating-star on"></span>' +
@@ -420,10 +427,10 @@
                         '            </div>' +
                         '        </div>' +
                         '    </div>' +
-                        
-                        '    <div class="tracklist">' +
-                        '        <ol class="tracks"> </ol>' +
-                        '        <div class="more">VIEW MORE...</div>' +
+                        '    <p class="description"></p>' +
+                        '    <div class="tracklist" id="tracklist">' +
+                        '        <ul class="tracks"> </ul>' +
+                        '        <div class="more">View More...</div>' +
                         '    </div>' +
                         '    <div class="jPlayer-container"></div>' +
                         '</div>';

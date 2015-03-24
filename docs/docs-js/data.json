@@ -144,12 +144,12 @@
         },
         {
             "file": "js/jsSrc/plugins/ttw-music-player.js",
-            "line": 474,
+            "line": 481,
             "class": "password_handling"
         },
         {
             "file": "js/jsSrc/plugins/ttw-music-player.js",
-            "line": 516,
+            "line": 523,
             "class": "password_handling"
         },
         {
@@ -198,11 +198,11 @@
         },
         {
             "message": "Missing item type",
-            "line": " js/jsSrc/plugins/ttw-music-player.js:474"
+            "line": " js/jsSrc/plugins/ttw-music-player.js:481"
         },
         {
             "message": "Missing item type",
-            "line": " js/jsSrc/plugins/ttw-music-player.js:516"
+            "line": " js/jsSrc/plugins/ttw-music-player.js:523"
         }
     ]
 }
