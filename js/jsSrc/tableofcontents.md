@@ -27,7 +27,7 @@ The directories in the JS/JSSRC folder and notes.
 
 #### LIBS ####
 1. jquery.js
-	- jQuery v1.10.2
+	- jQuery v1.9.1
 
 
 #### PLUGINS ####

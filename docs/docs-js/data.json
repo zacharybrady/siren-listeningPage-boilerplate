@@ -6,6 +6,13 @@
         "url": ""
     },
     "files": {
+        "js/jsSrc/libs/jquery.js": {
+            "name": "js/jsSrc/libs/jquery.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
         "js/jsSrc/plugins/ttw-music-player.js": {
             "name": "js/jsSrc/plugins/ttw-music-player.js",
             "modules": {},
@@ -117,6 +124,99 @@
     },
     "classitems": [
         {
+            "file": "js/jsSrc/libs/jquery.js",
+            "line": 3837,
+            "description": "For feature detection",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "The function to test for native support",
+                    "type": "Function"
+                }
+            ],
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/libs/jquery.js",
+            "line": 3845,
+            "description": "Create key-value caches of limited size",
+            "return": {
+                "description": "Returns the Object data after storing it on itself with\n\tproperty name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)\n\tdeleting the oldest entry",
+                "type": "Function(string, Object)"
+            },
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/libs/jquery.js",
+            "line": 3865,
+            "description": "Mark a function for special use by Sizzle",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "The function to mark",
+                    "type": "Function"
+                }
+            ],
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/libs/jquery.js",
+            "line": 3874,
+            "description": "Support testing using an element",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "Passed the created div and expects a boolean result",
+                    "type": "Function"
+                }
+            ],
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/libs/jquery.js",
+            "line": 4001,
+            "description": "Detect xml",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "An element or a document",
+                    "type": "Element|Object"
+                }
+            ],
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/libs/jquery.js",
+            "line": 4012,
+            "description": "Sets document-related variables once based on the current document",
+            "params": [
+                {
+                    "name": "doc",
+                    "description": "An element or document object to use to set the document",
+                    "type": "Element|Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "Returns the current document",
+                "type": "Object"
+            },
+            "class": "password_handling"
+        },
+        {
+            "file": "js/jsSrc/libs/jquery.js",
+            "line": 4505,
+            "description": "Utility function for retrieving the text value of an array of DOM nodes",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "",
+                    "type": "Array|Element"
+                }
+            ],
+            "class": "password_handling"
+        },
+        {
             "file": "js/jsSrc/plugins/ttw-music-player.js",
             "line": 1,
             "description": "Created by 23rd and Walnut for Codebasehero.com\nwww.23andwalnut.com\nwww.codebasehero.com\nUser: Saleem El-Amin\nDate: 6/11/11\nTime: 6:41 AM\n\nVersion: 1.01\nLicense: You are free to use this file in personal and commercial products, however re-distribution 'as-is' without prior consent is prohibited.",
@@ -168,6 +268,42 @@
         }
     ],
     "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " js/jsSrc/libs/jquery.js:3845"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " js/jsSrc/libs/jquery.js:4012"
+        },
+        {
+            "message": "Missing item type\nFor feature detection",
+            "line": " js/jsSrc/libs/jquery.js:3837"
+        },
+        {
+            "message": "Missing item type\nCreate key-value caches of limited size",
+            "line": " js/jsSrc/libs/jquery.js:3845"
+        },
+        {
+            "message": "Missing item type\nMark a function for special use by Sizzle",
+            "line": " js/jsSrc/libs/jquery.js:3865"
+        },
+        {
+            "message": "Missing item type\nSupport testing using an element",
+            "line": " js/jsSrc/libs/jquery.js:3874"
+        },
+        {
+            "message": "Missing item type\nDetect xml",
+            "line": " js/jsSrc/libs/jquery.js:4001"
+        },
+        {
+            "message": "Missing item type\nSets document-related variables once based on the current document",
+            "line": " js/jsSrc/libs/jquery.js:4012"
+        },
+        {
+            "message": "Missing item type\nUtility function for retrieving the text value of an array of DOM nodes",
+            "line": " js/jsSrc/libs/jquery.js:4505"
+        },
         {
             "message": "Missing item type\nCreated by 23rd and Walnut for Codebasehero.com\nwww.23andwalnut.com\nwww.codebasehero.com\nUser: Saleem El-Amin\nDate: 6/11/11\nTime: 6:41 AM\n\nVersion: 1.01\nLicense: You are free to use this file in personal and commercial products, however re-distribution 'as-is' without prior consent is prohibited.",
             "line": " js/jsSrc/plugins/ttw-music-player.js:1"
