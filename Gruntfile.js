@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       },
       scss: {
         files: ['css/scss/*.scss','css/scss/*/*.scss'],
-        tasks: ['sass', 'criticalcss', 'postcss' ],
+        tasks: ['sass', 'postcss' ],
         options: {
           spawn: false,
         }
@@ -34,7 +34,8 @@ module.exports = function(grunt) {
     uglify: {
       dist:{
         files:{
-          'js/global.min.js' : ['js/jsSrc/polyfills/respimage.js', 'js/jsSrc/plugins/lazysizes.js', 'js/jsSrc/libs/shoestring.js', 'js/jsSrc/global.js']
+          'js/home.min.js' : ['js/jsSrc/libs/jquery.js', 'js/jsSrc/home.js'],
+         'js/listen.min.js' : ['js/jsSrc/libs/jquery.js', 'js/jsSrc/plugins/jquery-jplayer/jquery.jplayer.js', 'js/jsSrc/plugins/ttw-music-player.js', 'js/jsSrc/myplaylist.js', 'js/jsSrc/listen.js']
         }
       }
     },
@@ -53,21 +54,6 @@ module.exports = function(grunt) {
       }
     },
 
-    //Critical CSS
-    criticalcss: {
-
-      //Set up a critical CSS file for each major template type
-
-      //Home
-      homePage: {
-        options: {
-          url: "http://siren.dev/",
-          outputfile: "css/critical/standard.css",
-          filename: "css/style.css"
-        }
-      }
-
-    },
 
     postcss: {
       options: {
@@ -93,11 +79,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch'); //Update watcher
   grunt.loadNpmTasks('grunt-contrib-uglify'); //Uglify JS
   grunt.loadNpmTasks('grunt-contrib-jshint'); //JS Hint
-  grunt.loadNpmTasks('grunt-criticalcss'); //Critical CSS
   grunt.loadNpmTasks('grunt-postcss'); //Post CSS
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'criticalcss', 'postcss' ]);
+  grunt.registerTask('default', ['watch' ]);
 
 };
