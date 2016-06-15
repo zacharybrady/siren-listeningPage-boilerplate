@@ -1,0 +1,70 @@
+/********
+
+Siren Framework v3.6
+
+File Name: Header and Footer
+
+File Purpose: Classes for the header and footer elements
+
+File Notes: 
+  - The header is designed to be a hamburger menu for the mobile view
+	- The footer is kept simple by default
+
+*********/
+
+
+/*-------------------------*\
+  #Header
+\*-------------------------*/
+
+.header{
+	text-align: center;
+	margin-bottom: $baseline;
+	padding: 1em;
+
+	&_logo{
+		margin: 0;
+	}
+}
+
+
+
+
+/*-------------------------*\
+  #Navigation
+\*-------------------------*/
+.nav {
+	&_list{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&_item{
+		padding: 0.5em 0;
+	}
+
+	&_link{ 
+		padding: 1em 0;
+	}
+}
+
+
+
+
+
+/*-------------------------*\
+  #Footer
+\*-------------------------*/
+
+.footer{
+	text-align: center;
+	margin-top: $baseline;
+	padding: 1em;
+
+	&_content{
+		margin: 0;
+	}
+}
+
+

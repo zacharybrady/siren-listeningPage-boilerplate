@@ -3,12 +3,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
 
-
-## DISABLES DIRECT FILE REQUESTS ##
-RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER} !^([^@]*)@@https?://\1/.*$ [NC]
-RewriteRule \.(js|scss|sass|css)$ - [F]
-
-
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -22,3 +16,6 @@ ExpiresByType text/javascript "access 1 month"
 ExpiresDefault "access 1 day"
 </IfModule>
 ## EXPIRES CACHING ##
+
+
+AddType text/cache-manifest .Apache

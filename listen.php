@@ -1,14 +1,15 @@
 <?php
-	//Siren Listening Page Boilerplate v1.0
-	//File Name: Listen
+	//Siren Listening Framework v3.0
+	//File Name: Sample Page
 	//File Purpose: To show developer class and element structure
 	//File Notes: Just an example
 
 	//Page Data Variables
 	$pagename = 'listen';
 
-    $meta_title = '{ Band Name } | Listening page';
-    $meta_desc = "Enjoy.";
+    $meta_title = 'Homepage';
+    $meta_desc = "Welcome to the site";
+    $meta_keywords = "stuff";
 
 
 	//Header
@@ -51,6 +52,5 @@
 
 
 </main>
-
 
 <?php require_once('includes/footer.php'); ?>

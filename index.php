@@ -1,14 +1,15 @@
 <?php
-	//Siren Listening Page Boilerplate v1.0
-	//File Name: Home
-	//File Purpose: Where the password form lives
+	//Siren Listening Framework v3.0
+	//File Name: Index Page
+	//File Purpose: To show developer class and element structure
 	//File Notes: Just an example
 
 	//Page Data Variables
 	$pagename = 'index';
 
-    $meta_title = '{ Band Name } | Enter Password to Continue';
-    $meta_desc = "Enter Password to continue to listening page.";
+    $meta_title = 'Homepage';
+    $meta_desc = "Welcome to the site";
+    $meta_keywords = "stuff";
 
 
 	//Header
@@ -26,5 +27,7 @@
 	</div>
 
 </div>
+
+
 
 <?php require_once('includes/footer.php'); ?>

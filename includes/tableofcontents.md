@@ -1,5 +1,5 @@
 # Table of Contents for the INCLUDES Directory #
-## Siren Listening Page Boilerplate v1.0 ##
+## As of Siren 3.2 ##
 For PHP files containing markup snippets such as the header.php and footer.php files
 
 ### FILES ###
