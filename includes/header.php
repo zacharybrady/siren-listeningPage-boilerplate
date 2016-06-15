@@ -61,7 +61,18 @@
 
 		if(typeof(document.querySelectorAll) != 'undefined'){
 			document.addEventListener("DOMContentLoaded", function() {
-				loadJS( "js/global.min.js" );
+<?php 
+
+		//Sets up data for asyncronous load of javascript files
+
+		if($pagename == 'listen'){
+		   	echo 'loadJS( "js/listen.min.js" );';
+		}
+		else if ($pagename == 'index'){ 
+		    echo 'loadJS( "js/home.min.js" );';
+		} 
+?>
+				
 			});
 	    }
 
