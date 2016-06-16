@@ -27,15 +27,15 @@ module.exports = function(grunt) {
 
      //JS Hinting
     jshint: {
-      all: ['Gruntfile.js', 'js/jsSrc/global.js']
+      all: ['Gruntfile.js', 'js/jsSrc/global.js', 'js/jsSrc/listen.js']
     },
 
     //Uglify for JS
     uglify: {
       dist:{
         files:{
-          'js/home.min.js' : ['js/jsSrc/libs/jquery.js', 'js/jsSrc/home.js'],
-         'js/listen.min.js' : ['js/jsSrc/libs/jquery.js', 'js/jsSrc/plugins/jquery-jplayer/jquery.jplayer.js', 'js/jsSrc/plugins/ttw-music-player.js', 'js/jsSrc/myplaylist.js', 'js/jsSrc/listen.js']
+          'js/global.min.js' : [ 'js/jsSrc/global.js'],
+          'js/listen.min.js' : ['js/jsSrc/libs/jquery.js','js/jsSrc/plugins/jquery-jplayer/jquery.jplayer.js', 'js/jsSrc/plugins/ttw-music-player.js', 'js/jsSrc/myplaylist.js', 'js/jsSrc/listen.js']
         }
       }
     },
@@ -48,12 +48,10 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {                        
-          'css/style.css': 'css/scss/style.scss',       
-          'css/ie8.css': 'css/scss/ie8.scss'
+          'css/style.css': 'css/scss/style.scss'
         }
       }
     },
-
 
     postcss: {
       options: {
@@ -83,6 +81,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task(s).
-  grunt.registerTask('default', ['watch' ]);
+  grunt.registerTask('default', ['sass', 'postcss' ]);
 
 };

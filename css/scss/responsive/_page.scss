@@ -1,0 +1,40 @@
+/********
+
+File Name: Page
+
+*********/
+
+
+@media only screen and (min-width: 800px)  {
+	
+	
+	.page {
+
+		/*-------------------------*\
+		  #Content
+		\*-------------------------*/
+
+		&_content {
+			width: 50%;
+			margin-left: 50%;
+		}
+
+
+
+
+
+
+		/*-------------------------*\
+		  #Image
+		\*-------------------------*/
+
+		&_image {
+			opacity: 1;
+			width: 50%;
+			position: fixed;
+		}
+
+	}
+	
+
+}

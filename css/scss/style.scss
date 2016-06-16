@@ -26,76 +26,21 @@ File Notes:
 @import "variables/variables"; 
 
 
-
-
 /*-------------------------*\
-  #Base-Basic
+	#Core
 \*-------------------------*/
-@import "base-basic/foundation";
-@import "base-basic/forms";
+@import "base/foundation"; 
+@import "base/forms";
 
 
 
 
 
 /*-------------------------*\
-  #Objects-Basic
+	#Objects
 \*-------------------------*/
-@import "objects-basic/headerfooter";
-
-
-
-
-/*-------------------------*\
-  #Layout-Basic
-\*-------------------------*/
-@import "layout-basic/spacing";
-
-
-
-
-
-
-/*-------------------------*\
-  #Enhanced
-\*-------------------------*/
-@media only all {
-
-	/*-------------------------*\
-	  #Core-Enhanced
-	\*-------------------------*/
-	@import "base-enhanced/foundation"; 
-	@import "base-enhanced/forms";
-
-
-
-
-
-	/*-------------------------*\
-	  #Objects-Enhanced
-	\*-------------------------*/
-	@import "objects-enhanced/headerfooter"; 
-
-
-
-
-
-	/*-------------------------*\
-	  #Layout-Enhanced
-	\*-------------------------*/
-	@import "layout-enhanced/grid";
-	@import "layout-enhanced/spacing";
-	@import "layout-enhanced/positioning";
-
-
-}
-
-
-/*-------------------------*\
-  #Helpers
-\*-------------------------*/
-@import "helpers/typographic";
-
+@import "objects/page";
+@import "objects/music";
 
 
 
@@ -103,17 +48,7 @@ File Notes:
 /*-------------------------*\
   #Responsive-Core
 \*-------------------------*/
-@import "responsive-core/foundation";
-@import "responsive-core/layout";
-
-
-
-
-
-/*-------------------------*\
-  #Responsive-Objects
-\*-------------------------*/
-@import "responsive-objects/headerfooter";
+@import "responsive/page";
 
 
 

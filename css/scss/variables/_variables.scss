@@ -12,6 +12,21 @@ File Notes:
 
 *********/
 
+@font-face {
+    font-family: 'league_gothicRg';
+    src: url('fonts/leaguegothic-regular-webfont.eot');
+    src: url('fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('fonts/leaguegothic-regular-webfont.svg#league_gothicCnRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 /*-------------------------*\
   #Global-Variables
 \*-------------------------*/
@@ -43,8 +58,7 @@ $baseline : 1.5em;
 
 $micro : 0.563em;
 $small : 0.75em;
-$body : 1em;
-$halfstep : 1.167em;
+$body : 1.167em;
 $medium : 1.333em;
 $large : 1.777em;
 $xLarge : 2.369em;
@@ -59,8 +73,8 @@ $xLarge : 2.369em;
 
 $color1: #000; //Black
 $color2: #fff;  //White
-$color3: #745050;  //Pale Red
-$color4: #afafaf;  //Gray
+$color3: lighten(#152134, 10%);  //Pale Red
+$color4: #1f2e3a;  //Gray
 
 
 
@@ -72,13 +86,9 @@ $color4: #afafaf;  //Gray
 \*-------------------------*/
 
 %primaryFont{
-	font-family: "proxima-nova", "Arial", sans-serif;
+	font-family: 'league_gothicRg', "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 400;
-
-	.font-loaded &, &.font-loaded {
-		font-family: "proxima-nova", "Arial", sans-serif;
-	}
 }
 
 

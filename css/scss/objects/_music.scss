@@ -1,0 +1,165 @@
+/********
+
+File Name: Music Player etc
+
+*********/
+
+/*-------------------------*\
+  #Container
+\*-------------------------*/
+
+.album_container {
+	text-align: center;
+	border: $color1 solid 0.25em;
+	max-width: 20em;
+	margin: 0 auto;
+	padding: 0.5em 0.75em;
+}
+
+
+
+
+/*-------------------------*\
+  #Links-MGMT
+\*-------------------------*/
+.data {
+	font-size: $medium/1.1;
+	max-width: 20em;
+	margin: 0 auto;
+
+	a {
+		margin: 0 0.5em;
+	}
+}
+
+.data_downloads, .mgmt {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+
+/*-------------------------*\
+  #Player
+\*-------------------------*/
+
+.album_playlist{
+	text-align: center;
+
+	p {
+		margin: 0 0 0.5em;
+	}
+}
+
+.tracks {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		font-size: 1em;
+		line-height: 1.5;
+		margin: 0;
+
+		span {
+			cursor: pointer;
+		}
+	}
+}
+
+.ttw-music-player li.playing {
+    font-weight: 400;
+}
+
+
+
+
+
+/*-------------------------*\
+  #Music-Player-Controls
+\*-------------------------*/
+
+.ttw-music-player .player-controls {
+	text-align: center;
+	width: 90px;
+	margin: 0 auto;
+	clear: both;
+	float: none!important;
+	overflow: hidden;
+}
+
+.ttw-music-player .player-controls div {
+    float: left;
+    cursor: pointer;
+}
+
+.ttw-music-player .previous, .ttw-music-player .next, .ttw-music-player .play, .ttw-music-player .pause {
+   	text-align: center;
+    height: 25px;
+    width: 30px;
+}
+
+
+.ttw-music-player .previous {
+    background: transparent url(images/prev.png) no-repeat center center;
+}
+
+.ttw-music-player .next {
+    background: transparent url(images/next.png) no-repeat center center;
+}
+
+.ttw-music-player .play {
+    background: transparent url(images/play.png) no-repeat center center;
+}
+
+.ttw-music-player .pause {
+    background: transparent url(images/pause.png) no-repeat center center;
+}
+
+.unused-controls {
+	display: block;
+	height: 1.5em;
+	margin-top: 2em;
+}
+
+.jp-duration {
+	&:before {
+		content: "- ";
+	}
+}
+
+
+/*-------------------------*\
+  #Music-Player-Misc
+\*-------------------------*/
+
+.album-cover, .artist-outer, .more, .description{
+	display: none!important;
+}
+
+
+
+
+
+
+
+/*-------------------------*\
+  #MGMT
+\*-------------------------*/
+
+.mgmt {
+	text-align: center;
+	max-width: 20em;
+	margin: 0 auto;
+	padding: 1.5em 0;
+
+	h3, p {
+		line-height: 1.2;
+		margin: 0;
+	}
+
+	&_title {
+		text-transform: uppercase;
+	}
+}

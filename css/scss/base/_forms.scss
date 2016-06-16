@@ -1,0 +1,66 @@
+/********
+
+Siren Framework v3.5
+
+File Name: Forms
+
+File Purpose: The standard echanced stylings for form elements.
+
+File Notes: 
+
+*********/
+
+
+/*-------------------------*\
+	#Form-Containers
+\*-------------------------*/
+
+form, fieldset{
+	text-align: center;
+	width: 100%;
+	max-width: 15em;
+	margin: 0 auto 1em;
+}
+
+
+
+
+
+/*-------------------------*\
+	#Inputs-Selects-Textarea
+\*-------------------------*/
+input{
+	@extend %primaryFont;
+	letter-spacing: 0.1em;
+	font-size: $medium;
+	outline: 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	outline: none;
+	border: 1px solid $color4;
+	background: rgba(255,255,255, 0.7);
+	width: 100%;
+	padding: 0.1em;
+}
+
+
+
+/*-------------------------*\
+	#Submit-Buttons
+\*-------------------------*/
+
+input[type="submit"]{
+	text-transform: uppercase;
+	background: transparent;
+	width: auto;
+	margin-top: 0.5em;
+	padding: 0.25em 1em;
+	transition: all .3s;
+	cursor: pointer;
+
+	&:hover{
+		color: $color2;
+		background: $color3;
+		border: 1px solid $color3;
+	}
+}

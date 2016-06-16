@@ -1,0 +1,143 @@
+/********
+
+Siren Framework v3.5
+
+File Name: Enhanced Core Styles
+
+File Purpose: Element styling on top of basic style sheet (basic/_core.scss)
+
+File Notes: 
+	- All elements are set to border-box model
+	- Font-sizes dictated through the Modular Scale Compass plugin
+	- Line-height and padding done through the Compass Vertical Rhythm system
+	- section, article, header, footer by default have side padding. This can be removed.
+
+*********/
+
+
+/*-------------------------*\
+	#Document-Level
+\*-------------------------*/
+
+html{
+ 	@extend %primaryFont;
+  	-ms-text-size-adjust: 100%; 
+  	-webkit-text-size-adjust: 100%; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; *behavior: url(../js/polyfills/boxsizing.htc);
+}
+
+
+*, *:before, *:after {
+  	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit; *behavior: url(../js/polyfills/boxsizing.htc);
+}
+
+
+body{
+	font-size: $body;
+	background: url(images/grunge_wall.png);
+	margin: 0;
+}
+
+
+
+
+/*-------------------------*\
+  #HTML5
+\*-------------------------*/
+
+footer, header, main, nav, section {
+  display: block;
+}
+
+
+audio, video {
+  display: inline-block; 
+  vertical-align: baseline; 
+}
+
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+
+
+
+
+/*-------------------------*\
+  #Links
+\*-------------------------*/
+
+a{
+  text-decoration: none; 
+  color: $color4;
+
+  &:hover, &:focus, &:active {
+    color: $color3;
+  }
+
+  &:focus{
+    outline: 0;
+  }
+
+  img { 
+    border: none;
+  }
+}
+
+
+
+
+/*-------------------------*\
+  #Headers
+\*-------------------------*/
+
+h1,h2,h3, h4{
+font-weight: 400;
+  text-transform: uppercase;
+  line-height: $line-height;
+}
+
+h1  { 
+  font-size: $xLarge;
+}
+
+h2  { 
+  font-size: $large;
+}
+
+h3   { 
+  font-size: $medium;
+  text-transform: none;
+}
+
+
+
+
+
+
+
+/*-------------------------*\
+	#Block-Level-Content
+\*-------------------------*/
+p, ol, ul, li{ 
+  	font-size: $body;
+}
+
+
+
+p {
+	max-width: 48em;
+  	margin-bottom: $baseline;
+}
+
+
+img{
+	max-width: 100%;
+}
+

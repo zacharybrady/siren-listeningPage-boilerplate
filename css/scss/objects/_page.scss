@@ -1,0 +1,50 @@
+/********
+
+File Name: Page
+
+*********/
+
+.page {
+
+	/*-------------------------*\
+	  #Content
+	\*-------------------------*/
+
+	&_content {
+		padding: 1em;
+	}
+
+
+
+
+
+
+	/*-------------------------*\
+	  #Image
+	\*-------------------------*/
+
+	&_image {
+		opacity: 0.3;
+		width: 100%;
+		position: fixed;
+		top: 50%;
+		left: 0;
+		z-index: -1;
+		transform: translateY(-50%);
+		display: block;
+	}
+
+}
+
+
+
+
+
+/*-------------------------*\
+	#Password & Header
+\*-------------------------*/
+
+.password, .password_message, .header {
+	text-align: center;
+
+}
